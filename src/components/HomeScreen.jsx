@@ -1,0 +1,17 @@
+const HomeScreen = ({ dispatch }) => {
+  return (
+    <div className="start">
+      <h2>Welcome to the Quize App</h2>
+      <h3>Get Access to practice questions </h3>
+
+      <button
+        className="btn btn-ui"
+        onClick={() => dispatch({ type: "setup" })}
+      >
+        Lets Start
+      </button>
+    </div>
+  );
+};
+
+export default HomeScreen;

@@ -1,0 +1,384 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is a synonym for 'happy'?",
+      "options": ["Sad", "Joyful", "Angry", "Bored"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the past tense of 'run'?",
+      "options": ["Ran", "Running", "Runned", "Runs"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Identify the adverb in the sentence: 'She quickly ran to the store.'",
+      "options": ["She", "Quickly", "Ran", "Store"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the plural form of 'child'?",
+      "options": ["Childs", "Children", "Childes", "Childies"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which word is a conjunction in the sentence: 'I wanted to go, but it was raining.'",
+      "options": ["I", "Wanted", "But", "Raining"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'ephemeral'?",
+      "options": [
+        "Lasting a very short time",
+        "Lasting forever",
+        "Very large",
+        "Very small"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the opposite of 'benevolent'?",
+      "options": ["Kind", "Generous", "Malevolent", "Friendly"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'gregarious'?",
+      "options": ["Shy", "Sociable", "Lazy", "Angry"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'meticulous'?",
+      "options": ["Careless", "Careful", "Lazy", "Angry"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'ostentatious'?",
+      "options": ["Modest", "Showy", "Quiet", "Shy"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'quixotic'?",
+      "options": ["Realistic", "Idealistic", "Pessimistic", "Optimistic"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'sanguine'?",
+      "options": ["Pessimistic", "Optimistic", "Angry", "Sad"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'ubiquitous'?",
+      "options": ["Rare", "Common", "Unique", "Scarce"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'voracious'?",
+      "options": ["Hungry", "Full", "Tired", "Angry"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'wane'?",
+      "options": ["Increase", "Decrease", "Stay the same", "Disappear"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'zenith'?",
+      "options": [
+        "Lowest point",
+        "Highest point",
+        "Middle point",
+        "Starting point"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'abate'?",
+      "options": ["Increase", "Decrease", "Stay the same", "Disappear"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'abhor'?",
+      "options": ["Love", "Hate", "Like", "Dislike"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'abstemious'?",
+      "options": ["Indulgent", "Moderate", "Excessive", "Greedy"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'acumen'?",
+      "options": ["Stupidity", "Intelligence", "Ignorance", "Foolishness"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'antebellum'?",
+      "options": [
+        "Before the war",
+        "After the war",
+        "During the war",
+        "Before the peace"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'auspicious'?",
+      "options": ["Unfavorable", "Favorable", "Neutral", "Uncertain"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'belie'?",
+      "options": ["Confirm", "Contradict", "Support", "Agree"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'bellicose'?",
+      "options": ["Peaceful", "Warlike", "Friendly", "Neutral"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'bowdlerize'?",
+      "options": ["Censor", "Publish", "Edit", "Write"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'chicanery'?",
+      "options": ["Honesty", "Deception", "Truth", "Fairness"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'circumspect'?",
+      "options": ["Careless", "Cautious", "Reckless", "Rash"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'clandestine'?",
+      "options": ["Open", "Secret", "Public", "Overt"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'coerce'?",
+      "options": ["Persuade", "Force", "Ask", "Request"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'complacent'?",
+      "options": ["Satisfied", "Dissatisfied", "Happy", "Sad"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'conflagration'?",
+      "options": ["Flood", "Fire", "Earthquake", "Tornado"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'contrite'?",
+      "options": ["Unrepentant", "Remorseful", "Happy", "Sad"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'convivial'?",
+      "options": ["Unfriendly", "Friendly", "Sad", "Angry"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'copious'?",
+      "options": ["Scarce", "Abundant", "Little", "Few"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'credulous'?",
+      "options": ["Skeptical", "Gullible", "Cynical", "Doubtful"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'cupidity'?",
+      "options": ["Generosity", "Greed", "Kindness", "Charity"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'deleterious'?",
+      "options": ["Harmful", "Beneficial", "Helpful", "Useful"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'demure'?",
+      "options": ["Bold", "Shy", "Confident", "Outgoing"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'deride'?",
+      "options": ["Praise", "Mock", "Admire", "Respect"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'despot'?",
+      "options": ["Tyrant", "Leader", "Servant", "Follower"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'diatribe'?",
+      "options": ["Praise", "Criticism", "Compliment", "Admiration"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'diffident'?",
+      "options": ["Confident", "Shy", "Bold", "Outgoing"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'enervate'?",
+      "options": ["Energize", "Weaken", "Strengthen", "Invigorate"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'ephemeral'?",
+      "options": [
+        "Lasting a very short time",
+        "Lasting forever",
+        "Very large",
+        "Very small"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'equivocal'?",
+      "options": ["Clear", "Ambiguous", "Certain", "Definite"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'erudite'?",
+      "options": ["Ignorant", "Learned", "Stupid", "Foolish"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'esoteric'?",
+      "options": ["Common", "Obscure", "Popular", "Well-known"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'exculpate'?",
+      "options": ["Blame", "Exonerate", "Accuse", "Condemn"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'exigent'?",
+      "options": ["Urgent", "Non-urgent", "Relaxed", "Calm"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'expunge'?",
+      "options": ["Add", "Erase", "Include", "Insert"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'extol'?",
+      "options": ["Criticize", "Praise", "Blame", "Condemn"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'fatuous'?",
+      "options": ["Intelligent", "Foolish", "Wise", "Smart"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'fractious'?",
+      "options": ["Cooperative", "Unruly", "Obedient", "Compliant"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'garrulous'?",
+      "options": ["Talkative", "Quiet", "Silent", "Reserved"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'gregarious'?",
+      "options": ["Shy", "Sociable", "Lonely", "Reserved"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'harangue'?",
+      "options": ["Praise", "Criticize", "Lecture", "Compliment"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'iconoclast'?",
+      "options": ["Traditionalist", "Rebel", "Conformist", "Follower"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'ignominious'?",
+      "options": ["Honorable", "Shameful", "Respectable", "Praiseworthy"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'impecunious'?",
+      "options": ["Wealthy", "Poor", "Rich", "Affluent"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the meaning of the word 'impetuous'?",
+      "options": ["Cautious", "Rash", "Careful", "Prudent"],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}
