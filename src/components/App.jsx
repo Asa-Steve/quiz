@@ -1,4 +1,4 @@
-import { act, useReducer } from "react";
+import { useReducer } from "react";
 import Header from "./Header";
 import HomeScreen from "./HomeScreen";
 import Main from "./Main";
@@ -19,6 +19,8 @@ const initialState = {
   timeAllowed: 600, //time for course in secs
   totalAnswered: null,
   currSubject: 0, // used to get first subject in the subjects array above
+  isSubjectCompleted: false, // used to verify if a subject is completed
+  completed: [],
 };
 
 function reducer(state, action) {
@@ -49,34 +51,79 @@ function reducer(state, action) {
       return {
         ...state,
         answer: action.payload,
-      };
-
-    case "nextQuestion":
-      // return {
-      //   ...state,
-      //   index: state.index + 1,
-      //   points:
-      //     state.questions.at(state.index).correctOption === action.payload
-      //       ? state.points + state.questions.at(state.index).points
-      //       : 0,
-      //   answer: null,
-      //   totalAnswered: state.totalAnswered + 1,
-      // };
-      return {
-        ...state,
-        index: state.index + 1,
         points:
           state.questions.at(state.index).correctOption === action.payload
             ? state.points + state.questions.at(state.index).points
             : state.points, // Keep previous points instead of resetting to 0
 
-        answer: null,
         totalAnswered: (state.totalAnswered || 0) + 1, // Ensure it's not null
+        isSubjectCompleted:
+          state.questions.length - 1 === state.index ? true : false,
       };
 
+    case "nextQuestion":
+      return {
+        ...state,
+        index: state.index + 1,
+        answer: null,
+      };
+
+    case "submitQuestion": {
+      const allCompleted =
+        state.completed.length === 0
+          ? Array(state.selectedSubjects.length).fill(false)
+          : state.completed;
+
+      const lastSubject =
+        state.currSubject === state.selectedSubjects.length - 1 ? true : false;
+
+      const nextSubjIndex = lastSubject
+        ? state.currSubject
+        : state.currSubject + 1;
+
+      const nextSubject = state.selectedSubjects.at(nextSubjIndex);
+      // console.log(!(Object.keys(state.subjectProgress).length === 0));
+      // if (!(Object.keys(state.subjectProgress).length === 0)) {
+      //   for (const [key, subject] of Object.entries(state.subjectProgress)) {
+      //     if (subject.isSubjectCompleted)
+      //       allCompleted[state.selectedSubjects.indexOf(key)] = true;
+      //   }
+      // } else {
+      allCompleted[state.currSubject] = true;
+      // }
+      // const unFinishedIndex = allCompleted.indexOf(false);
+      // console.log(allCompleted);
+      return {
+        ...state,
+        // completed: allCompleted.every((subject) => subject === true),
+        completed: allCompleted,
+        status: allCompleted.every((subject) => subject === true)
+          ? "finish"
+          : state.status,
+
+        // saving progress for later
+        subjectProgress: {
+          ...state.subjectProgress,
+          [state.selectedSubjects[state.currSubject]]: {
+            index: state.index,
+            points: state.points,
+            totalAnswered: state.totalAnswered,
+            isSubjectCompleted: true,
+          },
+        },
+
+        // switching
+        currSubject: nextSubjIndex,
+        questions: state.allQuestions[nextSubject],
+        index: state.subjectProgress[nextSubject]?.index || 0,
+        points: state.subjectProgress[nextSubject]?.points || 0,
+        totalAnswered: state.subjectProgress[nextSubject]?.totalAnswered || 0,
+        answer: null,
+      };
+    }
     case "switchSubject": {
       const newSubject = action.payload;
-
+      console.log(action.payload, state.selectedSubjects.indexOf(newSubject));
       return {
         ...state,
 
@@ -87,13 +134,9 @@ function reducer(state, action) {
             index: state.index,
             points: state.points,
             totalAnswered: state.totalAnswered,
-            isCompleted:
-              state.index === state.questions[state.currSubject].length - 1
-                ? true
-                : false,
+            isSubjectCompleted: state.isSubjectCompleted,
           },
         },
-
         // switching
         currSubject: state.selectedSubjects.indexOf(newSubject),
         questions: state.allQuestions[newSubject],
@@ -126,6 +169,8 @@ const App = () => {
       timeAllowed,
       totalAnswered,
       currSubject,
+      isSubjectCompleted,
+      subjectProgress,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -149,6 +194,7 @@ const App = () => {
             timeAllowed={timeAllowed}
             selectedSubjects={selectedSubjects}
             currSubject={currSubject}
+            isSubjectCompleted={isSubjectCompleted}
           />
         )}
 
@@ -158,6 +204,7 @@ const App = () => {
             questions={questions}
             totalAnswered={totalAnswered}
             dispatch={dispatch}
+            subjectProgress={subjectProgress}
           />
         )}
       </Main>

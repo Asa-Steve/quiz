@@ -13,6 +13,7 @@ const Questions = ({
   timeAllowed,
   selectedSubjects,
   currSubject,
+  isSubjectCompleted,
 }) => {
   const isAnswered = answer !== null;
   const numOfQuest = questions.length;
@@ -41,7 +42,8 @@ const Questions = ({
             key={subject}
             disabled={
               (index < questions.length - 1 && answer !== null) ||
-              subjectProgress?.isCompleted
+              isSubjectCompleted
+              // (isSubjectCompleted && currSubject === i)
             }
           >
             {subject}
@@ -85,6 +87,7 @@ const Questions = ({
         timeAllowed={timeAllowed}
         index={index}
         questions={questions}
+        isSubjectCompleted={isSubjectCompleted}
       />
     </div>
   );

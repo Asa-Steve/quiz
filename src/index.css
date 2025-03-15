@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+
 :root {
   --color-darkest: #343a40;
   /* --color-darkest: #285889; will come back to this color*/
@@ -10,8 +12,6 @@
   --color-accent: #ffa94d;
   --color-danger: red;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
 
 #root {
   border: 10px double rgb(255, 255, 255);
@@ -300,7 +300,7 @@ progress {
 }
 
 .question .next,
-.timer {
+.submit ,.timer {
   padding: 0.5rem 2rem;
   width: 140px;
   margin-left: auto;
@@ -349,7 +349,7 @@ progress {
 }
 
 .question .quiz_courses button[disabled] {
-  cursor:not-allowed;
+  cursor: not-allowed;
 }
 /* Footer */
 footer {

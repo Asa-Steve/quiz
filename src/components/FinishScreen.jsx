@@ -1,8 +1,29 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
 
-const FinishScreen = ({ dispatch, points, questions, totalAnswered }) => {
-  const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
+const FinishScreen = ({
+  dispatch,
+  points,
+  questions,
+  totalAnswered,
+  subjectProgress,
+}) => {
+  const totalPoints = Object.keys(subjectProgress).reduce(
+    (acc, currSubject) => ({
+      totalPts: acc.totalPts + currSubject.totalPoints,
+      totalAns: acc.totalAns + currSubject.totalAnswered,
+    }),
+    {
+      totalPts: 0,
+      totalAns: 0,
+    }
+  );
+
+  // Object.keys(subjectProgress).reduce()
+
+  console.log(totalPoints);
+
+  // const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
   const percentage = Math.floor((points / totalPoints) * 100);
   const totalAttempt = totalAnswered;
 
@@ -37,8 +58,8 @@ const FinishScreen = ({ dispatch, points, questions, totalAnswered }) => {
           <div>
             <span>
               <ProgressBar
-                percentage={(totalAttempt/questions.length)*100}
-                text={totalAnswered }
+                percentage={(totalAttempt / questions.length) * 100}
+                text={totalAnswered}
                 rad={50}
                 size={30}
               />
