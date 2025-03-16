@@ -3,6 +3,34 @@ import Loader from "./Loader";
 import Option from "./Option";
 import Footer from "./Footer";
 
+// Function to shuffle an array
+const shuffleArray = (array) => {
+  return array.sort(() => Math.random() - 0.5);
+};
+
+// Function to shuffle options while keeping track of the correct answer
+const shuffleOptions = (question) => {
+  const optionsWithIndex = question.options.map((option, index) => ({
+    option,
+    index,
+  }));
+
+  // Shuffle the options
+  const shuffledOptions = shuffleArray(optionsWithIndex);
+
+  // Find the new index of the correct answer
+  const newCorrectIndex = shuffledOptions.findIndex(
+    (opt) => opt.index === question.correctOption
+  );
+
+  // Return the updated question with shuffled options
+  return {
+    ...question,
+    options: shuffledOptions.map((opt) => opt.option),
+    correctOption: newCorrectIndex,
+  };
+};
+
 const Questions = ({
   dispatch,
   status,
@@ -14,6 +42,7 @@ const Questions = ({
   selectedSubjects,
   currSubject,
   isSubjectCompleted,
+  totalTime,
 }) => {
   const isAnswered = answer !== null;
   const numOfQuest = questions.length;
@@ -23,7 +52,20 @@ const Questions = ({
     fetch("http://localhost:5000/questions")
       .then((res) => res.json())
       .then((data) => {
-        dispatch({ type: "active", payload: data });
+        const randomizedQuestions = {};
+
+        // Loop through each subject
+        Object.keys(data).forEach((subject) => {
+          // Shuffle options in each question
+          let shuffledQuestions = data[subject].map(shuffleOptions);
+
+          // Shuffle the order of questions
+          shuffledQuestions = shuffleArray(shuffledQuestions);
+
+          randomizedQuestions[subject] = shuffledQuestions;
+        });
+
+        dispatch({ type: "active", payload: randomizedQuestions });
       })
       .catch((err) => console.log(err));
   }, [dispatch]);
@@ -31,65 +73,72 @@ const Questions = ({
   return status === "loading" ? (
     <Loader />
   ) : (
-    <div className="question">
-      <div className="quiz_courses">
-        {selectedSubjects.map((subject, i) => (
-          <button
-            className={currSubject === i ? "active" : ""}
-            onClick={() =>
-              dispatch({ type: "switchSubject", payload: subject })
-            }
-            key={subject}
-            disabled={
-              (index < questions.length - 1 && answer !== null) ||
-              isSubjectCompleted
-              // (isSubjectCompleted && currSubject === i)
-            }
-          >
-            {subject}
-          </button>
-        ))}
-      </div>
+    <>
+      <div className="question">
+        <div className="quiz_courses">
+          {selectedSubjects.map((subject, i) => (
+            <button
+              className={currSubject === i ? "active" : ""}
+              onClick={() =>
+                dispatch({ type: "switchSubject", payload: subject })
+              }
+              key={subject}
+              disabled={
+                (index < questions.length - 1 && answer !== null) ||
+                isSubjectCompleted
+              }
+            >
+              {subject}
+            </button>
+          ))}
+        </div>
+        {isSubjectCompleted ? (
+          <div className="completed">Completed</div>
+        ) : (
+          <>
+            <div className="progress">
+              <progress
+                max={numOfQuest}
+                value={index + Number(answer !== null)}
+              />
+            </div>
+            <div className="stat">
+              <span>
+                Question <strong>{index + 1}</strong>/{numOfQuest}
+              </span>
 
-      <div className="progress">
-        <progress max={numOfQuest} value={index + Number(answer)} />
-      </div>
-      <div className="stat">
-        <span>
-          Question <strong>{index + 1}</strong>/{numOfQuest}
-        </span>
+              <span>
+                <strong>{points}</strong>/{totalPoints} Points
+              </span>
+            </div>
+            <h4>{questions.at(index).question}</h4>
+            <div className="options">
+              {questions.at(index).options.map((option, idx) => (
+                <Option
+                  dispatch={dispatch}
+                  option={option}
+                  isAnswered={isAnswered}
+                  answer={answer}
+                  idx={idx}
+                  questions={questions}
+                  index={index}
+                  key={option}
+                />
+              ))}
+            </div>
+          </>
+        )}
 
-        <span>
-          <strong>{points}</strong>/{totalPoints} Points
-        </span>
+        <Footer
+          dispatch={dispatch}
+          isAnswered={isAnswered}
+          answer={answer}
+          timeAllowed={timeAllowed}
+          isSubjectCompleted={isSubjectCompleted}
+          totalTime={totalTime}
+        />
       </div>
-      <h4>{questions.at(index).question}</h4>
-
-      <div className="options">
-        {questions.at(index).options.map((option, idx) => (
-          <Option
-            dispatch={dispatch}
-            option={option}
-            isAnswered={isAnswered}
-            answer={answer}
-            idx={idx}
-            questions={questions}
-            index={index}
-            key={option}
-          />
-        ))}
-      </div>
-
-      <Footer
-        dispatch={dispatch}
-        isAnswered={isAnswered}
-        answer={answer}
-        timeAllowed={timeAllowed}
-        index={index}
-        questions={questions}
-        isSubjectCompleted={isSubjectCompleted}
-      />
-    </div>
+    </>
   );
 };
 

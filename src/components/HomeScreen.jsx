@@ -1,7 +1,7 @@
 const HomeScreen = ({ dispatch }) => {
   return (
     <div className="start">
-      <h2>Welcome to the Quize App</h2>
+      <h2>Welcome to the Quiz App</h2>
       <h3>Get Access to practice questions </h3>
 
       <button

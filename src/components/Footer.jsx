@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import TimerProgress from "./ProgressBar";
 
 const Footer = ({
@@ -6,13 +6,13 @@ const Footer = ({
   isAnswered,
   answer,
   timeAllowed,
-  index,
-  questions,
   isSubjectCompleted,
+  totalTime,
 }) => {
   const min = Math.floor(timeAllowed / 60); //timeAllowed is in sec (divided by 60 to get time in ---> minutes)
   const sec = timeAllowed % 60; //trying to get the remaining fraction of time left after getting the minutes above
   useEffect(() => {
+    console.log(timeAllowed);
     const intervalId = setInterval(() => {
       timeAllowed && dispatch({ type: "tick" });
     }, 1000);
@@ -23,10 +23,14 @@ const Footer = ({
 
   return (
     <footer>
-      <TimerProgress percentage={timeAllowed * 10} />
-      <span className="timer">
+      <TimerProgress
+        percentage={(timeAllowed / totalTime) * 100}
+        text={`${min} : ${sec}`}
+        rad={40}
+      />
+      {/* <span className="timer">
         {min} : {sec}
-      </span>
+      </span> */}
       {isAnswered && !isSubjectCompleted && (
         <button
           className="btn btn-ui next"

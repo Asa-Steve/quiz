@@ -3,28 +3,25 @@ import ProgressBar from "./ProgressBar";
 
 const FinishScreen = ({
   dispatch,
-  points,
-  questions,
-  totalAnswered,
+  // points,
+  // questions,
+  // totalAnswered,
   subjectProgress,
 }) => {
-  const totalPoints = Object.keys(subjectProgress).reduce(
-    (acc, currSubject) => ({
-      totalPts: acc.totalPts + currSubject.totalPoints,
-      totalAns: acc.totalAns + currSubject.totalAnswered,
-    }),
-    {
-      totalPts: 0,
-      totalAns: 0,
-    }
-  );
+  let totalPoints = 0;
+  let totalAnswered = 0;
+  let totalQuestions = 0;
+  let totalMaxPoints = 0;
 
-  // Object.keys(subjectProgress).reduce()
+  for (const [_, subjDetails] of Object.entries(subjectProgress)) {
+    totalPoints += subjDetails.points;
+    totalMaxPoints += subjDetails.maxPoints;
+    totalAnswered += subjDetails.totalAnswered;
+    totalQuestions += subjDetails.totalQuestions;
+  }
 
-  console.log(totalPoints);
-
-  // const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
-  const percentage = Math.floor((points / totalPoints) * 100);
+  const percentage = Math.floor((totalPoints / totalMaxPoints) * 100);
+  const percentageQuestion = Math.floor((totalAnswered / totalQuestions) * 100);
   const totalAttempt = totalAnswered;
 
   return (
@@ -40,32 +37,41 @@ const FinishScreen = ({
             <span>
               <ProgressBar
                 percentage={percentage}
-                text={points}
+                text={totalPoints}
                 rad={50}
                 size={30}
               />
             </span>
             <span>
-              Points Gained ( {points}/ {totalPoints})
+              Points Gained ( {totalPoints}/ {totalMaxPoints})
             </span>
-          </div>
-          <div>
-            <span>
-              <ProgressBar percentage={percentage} rad={50} size={30} />
-            </span>
-            <span> Percentage ( {percentage} / 100 %)</span>
           </div>
           <div>
             <span>
               <ProgressBar
-                percentage={(totalAttempt / questions.length) * 100}
+                percentage={100 - percentage}
+                rad={50}
+                color="red"
+                size={30}
+                text={totalMaxPoints - totalPoints}
+              />
+            </span>
+            <span>
+              {" "}
+              Points Lost ( {totalMaxPoints - totalPoints} / {totalMaxPoints})
+            </span>
+          </div>
+          <div>
+            <span>
+              <ProgressBar
+                percentage={percentageQuestion}
                 text={totalAnswered}
                 rad={50}
                 size={30}
               />
             </span>
             <span>
-              Attempted ( {totalAttempt} / {questions.length})
+              Attempted ( {totalAttempt} / {totalQuestions})
             </span>
           </div>
         </div>
