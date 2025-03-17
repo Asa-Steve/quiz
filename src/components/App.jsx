@@ -7,7 +7,7 @@ import Questions from "./Questions";
 import FinishScreen from "./FinishScreen";
 
 // Utils
-import { initGA } from "./gtag";
+import { initGA } from "../utils/gtag";
 import { initialState, reducer } from "../utils/reducerFn";
 
 const App = () => {
