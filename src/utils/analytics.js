@@ -1,6 +1,7 @@
 import ReactGA from "react-ga4";
+const key = import.meta.env.VITE_G_ANALYTICS_KEY;
 
-const TRACKING_ID = "G-XXXXXXXXXX"; // Replace with your Measurement ID
+const TRACKING_ID = key; // Replace with your Measurement ID
 ReactGA.initialize(TRACKING_ID);
 
 export const trackEvent = (category, action, label) => {
