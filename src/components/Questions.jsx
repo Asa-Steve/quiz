@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Loader from "./Loader";
 import Option from "./Option";
 import Footer from "./Footer";
-import { trackEvent, trackUserTiming } from "../utils/analytics";
+import { trackEvent, trackTiming } from "../utils/gtag";
 
 // Function to shuffle an array
 const shuffleArray = (array) => {
@@ -72,16 +72,30 @@ const Questions = ({
   }, [dispatch]);
 
   // For Google Analytics to work
-  useEffect(() => {
-    // When user starts the quiz
-    trackEvent("Quiz", "Started", "User started the quiz");
-    const startTime = Date.now(); // Start timer
+  // useEffect(() => {
+  //   // When user starts the quiz
+  //   trackEvent("Quiz", "Started", "User started the quiz");
+  //   const startTime = Date.now(); // Start timer
 
+  //   return () => {
+  //     // When user completes the quiz
+  //     const timeTaken = Date.now() - startTime;
+  //     trackEvent("Quiz", "Completed", "User finished the quiz");
+  //     trackUserTiming("Quiz", "Completion Time", timeTaken);
+  //   };
+  // }, []);
+
+  useEffect(() => {
+    // Start tracking when quiz mounts
+    const startTime = Date.now(); // Start timer
+    trackEvent("Quiz", "Started", "User started the quiz");
     return () => {
-      // When user completes the quiz
-      const timeTaken = Date.now() - startTime;
-      trackEvent("Quiz", "Completed", "User finished the quiz");
-      trackUserTiming("Quiz", "Completion Time", timeTaken);
+      // When quiz unmounts, calculate the duration
+      if (startTime) {
+        const duration = Date.now() - startTime;
+        trackTiming("Quiz Completion Time", duration);
+        trackEvent("Quiz", "Completed", "User finished the quiz");
+      }
     };
   }, []);
 

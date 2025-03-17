@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import Header from "./Header";
 import HomeScreen from "./HomeScreen";
 import Main from "./Main";
@@ -6,9 +6,15 @@ import Setup from "./Setup";
 import Questions from "./Questions";
 import FinishScreen from "./FinishScreen";
 
+// Utils
+import { initGA } from "./gtag";
 import { initialState, reducer } from "../utils/reducerFn";
 
 const App = () => {
+  useEffect(() => {
+    initGA(); // Initialize Google Analytics when the app loads
+  }, []);
+
   const [
     {
       questions,
