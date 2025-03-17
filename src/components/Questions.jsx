@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Loader from "./Loader";
 import Option from "./Option";
 import Footer from "./Footer";
+import { trackEvent, trackUserTiming } from "../utils/analytics";
 
 // Function to shuffle an array
 const shuffleArray = (array) => {
@@ -69,6 +70,20 @@ const Questions = ({
       })
       .catch((err) => console.log(err));
   }, [dispatch]);
+
+  // For Google Analytics to work
+  useEffect(() => {
+    // When user starts the quiz
+    trackEvent("Quiz", "Started", "User started the quiz");
+    const startTime = Date.now(); // Start timer
+
+    return () => {
+      // When user completes the quiz
+      const timeTaken = Date.now() - startTime;
+      trackEvent("Quiz", "Completed", "User finished the quiz");
+      trackUserTiming("Quiz", "Completion Time", timeTaken);
+    };
+  }, []);
 
   return status === "loading" ? (
     <Loader />
