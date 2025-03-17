@@ -12,7 +12,6 @@ const Footer = ({
   const min = Math.floor(timeAllowed / 60); //timeAllowed is in sec (divided by 60 to get time in ---> minutes)
   const sec = timeAllowed % 60; //trying to get the remaining fraction of time left after getting the minutes above
   useEffect(() => {
-    console.log(timeAllowed);
     const intervalId = setInterval(() => {
       timeAllowed && dispatch({ type: "tick" });
     }, 1000);

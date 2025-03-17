@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Loader from "./Loader";
 import Option from "./Option";
 import Footer from "./Footer";
+import Error from "./Error";
 import { trackEvent, trackTiming } from "../utils/gtag";
 
 // Function to shuffle an array
@@ -50,9 +51,16 @@ const Questions = ({
   const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
 
   useEffect(() => {
-    fetch("http://localhost:5000/questions")
-      .then((res) => res.json())
-      .then((data) => {
+    async function fetchQuestions() {
+      try {
+        const res = await fetch("https://quiz-resource.onrender.com/questions");
+        console.log(res);
+        if (!res.ok) throw new Error("Couldnt fetch Questions");
+        const data = await res.json();
+
+        if (Object.keys(data).length === 0)
+          throw new Error("No Questions Found!");
+
         const randomizedQuestions = {};
 
         // Loop through each subject
@@ -67,24 +75,19 @@ const Questions = ({
         });
 
         dispatch({ type: "active", payload: randomizedQuestions });
-      })
-      .catch((err) => console.log(err));
+      } catch (error) {
+        if (error?.name !== "AbortError") {
+          console.error("Fetch error: ", error);
+        }
+        console.log(" iran", error);
+        dispatch({ type: "error" });
+      }
+    }
+
+    fetchQuestions();
   }, [dispatch]);
 
   // For Google Analytics to work
-  // useEffect(() => {
-  //   // When user starts the quiz
-  //   trackEvent("Quiz", "Started", "User started the quiz");
-  //   const startTime = Date.now(); // Start timer
-
-  //   return () => {
-  //     // When user completes the quiz
-  //     const timeTaken = Date.now() - startTime;
-  //     trackEvent("Quiz", "Completed", "User finished the quiz");
-  //     trackUserTiming("Quiz", "Completion Time", timeTaken);
-  //   };
-  // }, []);
-
   useEffect(() => {
     // Start tracking when quiz mounts
     const startTime = Date.now(); // Start timer

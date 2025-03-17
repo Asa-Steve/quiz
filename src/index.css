@@ -44,6 +44,7 @@ body {
   position: relative;
   display: flex;
   place-content: center;
+  user-select: none;
 }
 body::before {
   content: "";
@@ -84,12 +85,15 @@ body::before {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
+  background-color: var(--color-theme);
   border-radius: 100px;
+  width: 60%;
+  margin: auto;
 }
 
 header img {
-  width: 14rem;
+
+  width: 140px;
   border: 1px solid var(--color-dark);
   position: absolute;
   left: 2rem;

@@ -224,6 +224,8 @@ export function reducer(state, action) {
     // Handling the retake state. to enable user try again
     case "retake":
       return { ...initialState };
+    case "error":
+      return { ...state, status: "error" };
     default:
       throw new Error("Unknown action type");
   }

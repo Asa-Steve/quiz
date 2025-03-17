@@ -9,6 +9,7 @@ import FinishScreen from "./FinishScreen";
 // Utils
 import { initGA } from "../utils/gtag";
 import { initialState, reducer } from "../utils/reducerFn";
+import Error from "./Error";
 
 const App = () => {
   useEffect(() => {
@@ -66,6 +67,8 @@ const App = () => {
             subjectProgress={subjectProgress}
           />
         )}
+
+        {status === "error" && <Error />}
       </Main>
     </div>
   );
