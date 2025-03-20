@@ -53,10 +53,10 @@ const Questions = ({
   useEffect(() => {
     async function fetchQuestions() {
       try {
-        const res = await fetch("https://quiz-resource.onrender.com/questions");
-        console.log(res);
+        // const res = await fetch("https://quiz-resource.onrender.com/questions");
         if (!res.ok) throw new Error("Couldnt fetch Questions");
         const data = await res.json();
+        console.log(data);
 
         if (Object.keys(data).length === 0)
           throw new Error("No Questions Found!");
@@ -79,7 +79,6 @@ const Questions = ({
         if (error?.name !== "AbortError") {
           console.error("Fetch error: ", error);
         }
-        console.log(" iran", error);
         dispatch({ type: "error" });
       }
     }

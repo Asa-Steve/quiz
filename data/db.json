@@ -1,193 +1,1657 @@
 {
   "questions": {
-    "English": [
+    "Chemistry": [
       {
-        "question": "What is the plural form of 'child'?",
-        "options": ["Childs", "Children", "Childes", "Childies"],
-        "correctOption": 1,
-        "points": 10
-      },
-      {
-        "question": "Which word is a synonym for 'benevolent'?",
-        "options": ["Cruel", "Kind", "Selfish", "Mean"],
-        "correctOption": 1,
-        "points": 10
-      },
-      {
-        "question": "Identify the adverb in the sentence: 'She sings beautifully.'",
-        "options": ["She", "Sings", "Beautifully", "None of the above"],
-        "correctOption": 2,
-        "points": 10
-      },
-      {
-        "question": "What is the past tense of 'go'?",
-        "options": ["Gone", "Went", "Goed", "Going"],
-        "correctOption": 1,
-        "points": 10
-      },
-      {
-        "question": "What is the meaning of the word 'ephemeral'?",
+        "question": "Which of the following is an example of a homogeneous mixture?",
         "options": [
-          "Lasting a very short time",
-          "Lasting forever",
-          "Very large",
-          "Very small"
+          "Sand and water",
+          "Salt and water",
+          "Oil and water",
+          "Iron filings and sulfur"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the oxidation number of sulfur in H2SO4?",
+        "options": ["+2", "+4", "+6", "+8"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "Which gas is commonly used in fire extinguishers?",
+        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "The process of converting a liquid to a gas is called?",
+        "options": ["Condensation", "Sublimation", "Evaporation", "Freezing"],
+        "correctOption": 2,
+        "points": 4
+      },
+      {
+        "question": "Which of the following is an alkaline earth metal?",
+        "options": ["Sodium", "Potassium", "Calcium", "Aluminum"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the empirical formula of a compound with the molecular formula C6H12O6?",
+        "options": ["CH2O", "C2H4O2", "C3H6O3", "C6H12O6"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a strong acid?",
+        "options": [
+          "Acetic acid",
+          "Carbonic acid",
+          "Hydrochloric acid",
+          "Citric acid"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the IUPAC name for CH3CH2COOH?",
+        "options": [
+          "Methanoic acid",
+          "Ethanoic acid",
+          "Propanoic acid",
+          "Butanoic acid"
+        ],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which element has the electron configuration 1s2 2s2 2p6 3s2 3p5?",
+        "options": ["Chlorine", "Sodium", "Argon", "Phosphorus"],
+        "correctOption": 0,
+        "points": 8
+      },
+      {
+        "question": "What type of bond is present in NaCl?",
+        "options": ["Covalent", "Metallic", "Ionic", "Coordinate"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a reducing agent?",
+        "options": ["KMnO4", "H2O2", "Zn", "O2"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "The rate of a reaction is affected by which of the following factors?",
+        "options": [
+          "Pressure only",
+          "Temperature only",
+          "Concentration only",
+          "All of the above"
+        ],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the molar mass of CaCO3?",
+        "options": ["80 g/mol", "100 g/mol", "120 g/mol", "140 g/mol"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is an example of a buffer solution?",
+        "options": ["HCl", "NaOH", "CH3COOH/CH3COONa", "NaCl"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the pH of a neutral solution at 25°C?",
+        "options": ["0", "7", "14", "10"],
+        "correctOption": 1,
+        "points": 4
+      },
+      {
+        "question": "Which gas is produced when a metal reacts with a dilute acid?",
+        "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Nitrogen"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "What is the shape of a molecule with sp3 hybridization?",
+        "options": ["Linear", "Trigonal planar", "Tetrahedral", "Bent"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "Which of the following is a polymer?",
+        "options": ["Glucose", "Starch", "Fructose", "Sucrose"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the process of separating crude oil into its components called?",
+        "options": [
+          "Distillation",
+          "Filtration",
+          "Crystallization",
+          "Sublimation"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a greenhouse gas?",
+        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "What is the product of the reaction between an acid and a base?",
+        "options": [
+          "Salt only",
+          "Water only",
+          "Salt and water",
+          "Acid and base"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a transition metal?",
+        "options": ["Sodium", "Potassium", "Iron", "Calcium"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the number of moles?",
+        "options": [
+          "Mass/Volume",
+          "Mass/Molar mass",
+          "Volume/Molar mass",
+          "Molar mass/Mass"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a catalyst?",
+        "options": ["Reactant", "Product", "Enzyme", "Solvent"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the process of rusting an example of?",
+        "options": ["Reduction", "Oxidation", "Neutralization", "Sublimation"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is an allotrope of carbon?",
+        "options": ["Diamond", "Water", "Salt", "Sugar"],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "What is the volume occupied by one mole of any gas at STP?",
+        "options": ["11.2 L", "22.4 L", "33.6 L", "44.8 L"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a radioactive element?",
+        "options": ["Iron", "Calcium", "Uranium", "Aluminum"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the formula for calculating density?",
+        "options": [
+          "Mass x Volume",
+          "Mass / Volume",
+          "Volume / Mass",
+          "Mass + Volume"
+        ],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a non-polar molecule?",
+        "options": ["H2O", "NH3", "CO2", "HCl"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the process of breaking down a compound by electricity called?",
+        "options": [
+          "Electrolysis",
+          "Filtration",
+          "Distillation",
+          "Sublimation"
+        ],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a weak base?",
+        "options": ["NaOH", "KOH", "NH4OH", "Ca(OH)2"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following represents an exothermic reaction?",
+        "options": ["ΔH > 0", "ΔH < 0", "ΔH = 0", "ΔH is constant"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the primary product of the Haber process?",
+        "options": [
+          "Nitric acid",
+          "Ammonia",
+          "Sulfuric acid",
+          "Carbon dioxide"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is used to test for the presence of unsaturation in organic compounds?",
+        "options": [
+          "Tollen's reagent",
+          "Fehling's solution",
+          "Bromine water",
+          "Litmus paper"
+        ],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the formula of potassium permanganate?",
+        "options": ["KMnO3", "KMnO4", "K2MnO4", "K2MnO3"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a component of photochemical smog?",
+        "options": ["Carbon monoxide", "Ozone", "Sulfur dioxide", "Nitrogen"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the process of converting an aldehyde to a carboxylic acid called?",
+        "options": ["Reduction", "Oxidation", "Esterification", "Hydrolysis"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a natural polymer?",
+        "options": ["Nylon", "Polyethylene", "Cellulose", "Polystyrene"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the function of a salt bridge in an electrochemical cell?",
+        "options": [
+          "To provide electrons",
+          "To maintain electrical neutrality",
+          "To increase the rate of reaction",
+          "To prevent oxidation"
+        ],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "Which of the following is used in the manufacture of soap?",
+        "options": ["Glycerol", "Ethanol", "Sodium hydroxide", "Acetic acid"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the process of vulcanization used for?",
+        "options": [
+          "To harden rubber",
+          "To soften rubber",
+          "To color rubber",
+          "To melt rubber"
+        ],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a product of the fermentation of glucose?",
+        "options": [
+          "Water",
+          "Carbon dioxide and ethanol",
+          "Oxygen",
+          "Nitrogen"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the bond angle in a tetrahedral molecule?",
+        "options": ["90°", "109.5°", "120°", "180°"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is an example of a condensation polymer?",
+        "options": ["Polyethylene", "Polystyrene", "Nylon", "Polypropylene"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the process of converting nitrogen gas to ammonia called?",
+        "options": [
+          "Photosynthesis",
+          "Nitrogen fixation",
+          "Respiration",
+          "Combustion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a method of preventing rusting?",
+        "options": ["Painting", "Heating", "Cooling", "Melting"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "What is the functional group in alcohols?",
+        "options": ["-COOH", "-CHO", "-OH", "-NH2"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is used to test for starch?",
+        "options": [
+          "Benedict's solution",
+          "Iodine solution",
+          "Fehling's solution",
+          "Litmus paper"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the rate of reaction?",
+        "options": [
+          "Change in concentration / Time",
+          "Change in volume / Time",
+          "Change in mass / Time",
+          "All of the above"
+        ],
+        "correctOption": 3,
+        "points": 7
       }
     ],
-    "Mathematics": [
+
+    "English": [
       {
-        "question": "What is the value of π (pi) to two decimal places?",
-        "options": ["3.14", "3.16", "3.12", "3.18"],
-        "correctOption": 0,
-        "points": 10
+        "question": "Choose the synonym for 'arduous'.",
+        "options": ["Easy", "Simple", "Difficult", "Pleasant"],
+        "correctOption": 2,
+        "points": 6
       },
       {
-        "question": "What is the square root of 144?",
-        "options": ["10", "12", "14", "16"],
+        "question": "Which word is an antonym for 'benevolent'?",
+        "options": ["Kind", "Cruel", "Generous", "Helpful"],
         "correctOption": 1,
-        "points": 10
+        "points": 5
       },
       {
-        "question": "Solve for x: 2x + 5 = 15",
-        "options": ["5", "10", "7.5", "6"],
-        "correctOption": 0,
-        "points": 10
-      },
-      {
-        "question": "What is the area of a circle with radius 7? (Use π = 22/7)",
-        "options": ["154", "144", "164", "174"],
-        "correctOption": 0,
-        "points": 10
-      },
-      {
-        "question": "What is the next number in the sequence: 2, 4, 8, 16, ___?",
-        "options": ["24", "32", "28", "30"],
+        "question": "Identify the figure of speech in 'He is as brave as a lion'.",
+        "options": ["Metaphor", "Simile", "Personification", "Hyperbole"],
         "correctOption": 1,
-        "points": 10
+        "points": 7
+      },
+      {
+        "question": "What is the plural of 'child'?",
+        "options": ["Childs", "Children", "Childes", "Childen"],
+        "correctOption": 1,
+        "points": 4
+      },
+      {
+        "question": "Complete the analogy: 'Cat : Kitten :: Dog : ______'",
+        "options": ["Puppy", "Canine", "Feline", "Hound"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a compound sentence?",
+        "options": [
+          "He ran.",
+          "He ran quickly.",
+          "He ran and he jumped.",
+          "Running is good."
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Identify the part of speech of 'quickly' in 'He ran quickly'.",
+        "options": ["Noun", "Verb", "Adjective", "Adverb"],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "Choose the correct tense: 'She ______ to the market yesterday'.",
+        "options": ["Goes", "Is going", "Went", "Will go"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which punctuation mark completes the sentence: 'Are you coming with us______'",
+        "options": [".", ",", "!", "?"],
+        "correctOption": 3,
+        "points": 4
+      },
+      {
+        "question": "What is the meaning of the idiom 'to kick the bucket'?",
+        "options": ["To succeed", "To fail", "To die", "To celebrate"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which word is correctly spelled?",
+        "options": ["Acomodate", "Accomodate", "Accommodate", "Acomoddate"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Identify the subject in the sentence: 'The dog barked loudly'.",
+        "options": ["The", "Dog", "Barked", "Loudly"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a collective noun?",
+        "options": ["Chair", "Table", "Crowd", "Book"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Complete the sentence: 'Neither he nor I ______ going'.",
+        "options": ["Is", "Are", "Am", "Were"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the meaning of 'ubiquitous'?",
+        "options": ["Rare", "Common", "Unique", "Hidden"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Choose the correct preposition: 'He is afraid ______ spiders'.",
+        "options": ["Of", "In", "At", "On"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of pronoun: 'She gave herself a treat'.",
+        "options": ["Personal", "Reflexive", "Relative", "Demonstrative"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a complex sentence?",
+        "options": [
+          "The cat slept.",
+          "The cat slept soundly.",
+          "The cat slept because it was tired.",
+          "The cat and the dog slept."
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to bite off more than you can chew'?",
+        "options": [
+          "To eat a lot",
+          "To take on more than you can handle",
+          "To be hungry",
+          "To be greedy"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct article: 'He is ______ honest man'.",
+        "options": ["A", "An", "The", "No article"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of clause: 'I know that you are lying'.",
+        "options": [
+          "Adjective clause",
+          "Adverb clause",
+          "Noun clause",
+          "Independent clause"
+        ],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "Which of the following is an example of alliteration?",
+        "options": [
+          "The sun is shining.",
+          "Peter Piper picked a peck of pickled peppers.",
+          "He is as tall as a tree.",
+          "The wind howled."
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to be in the same boat'?",
+        "options": [
+          "To be on a journey",
+          "To be in the same situation",
+          "To be in a race",
+          "To be in a competition"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct verb: 'Everyone ______ invited to the party'.",
+        "options": ["Was", "Were", "Are", "Been"],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "Identify the type of sentence: 'What a beautiful day!'",
+        "options": [
+          "Declarative",
+          "Interrogative",
+          "Imperative",
+          "Exclamatory"
+        ],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "What is the meaning of 'to let the cat out of the bag'?",
+        "options": [
+          "To play with a cat",
+          "To reveal a secret",
+          "To buy a cat",
+          "To lose a cat"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct conjunction: 'He is tall ______ his brother is short'.",
+        "options": ["And", "But", "Or", "So"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of noun: 'Honesty is the best policy'.",
+        "options": ["Common", "Proper", "Collective", "Abstract"],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to make ends meet'?",
+        "options": [
+          "To build a bridge",
+          "To earn a lot of money",
+          "To manage on a small income",
+          "To travel far"
+        ],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct pronoun: '______ are going to the cinema'.",
+        "options": ["He", "She", "They", "It"],
+        "correctOption": 2,
+        "points": 4
+      },
+      {
+        "question": "Identify the type of verb: 'She will be singing'.",
+        "options": ["Simple", "Continuous", "Perfect", "Perfect continuous"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to put all your eggs in one basket'?",
+        "options": [
+          "To be careful",
+          "To risk everything on one thing",
+          "To be generous",
+          "To be greedy"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct adverb: 'He spoke ______'.",
+        "options": ["Quiet", "Quietly", "Quiteness", "Quieting"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of adjective: 'This is a beautiful painting'.",
+        "options": [
+          "Descriptive",
+          "Demonstrative",
+          "Possessive",
+          "Interrogative"
+        ],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to break the ice'?",
+        "options": [
+          "To start a fire",
+          "To initiate conversation",
+          "To end a conversation",
+          "To create a problem"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct preposition: 'The book is ______ the table'.",
+        "options": ["In", "On", "At", "Under"],
+        "correctOption": 1,
+        "points": 4
+      },
+      {
+        "question": "Identify the type of sentence: 'If you study, you will pass'.",
+        "options": ["Simple", "Compound", "Complex", "Compound-complex"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to pull someone's leg'?",
+        "options": [
+          "To help someone",
+          "To deceive someone playfully",
+          "To hurt someone",
+          "To ignore someone"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct pronoun: '______ own this house'.",
+        "options": ["He", "She", "They", "We"],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of verb: 'She has been working'.",
+        "options": ["Simple", "Continuous", "Perfect", "Perfect continuous"],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to see eye to eye'?",
+        "options": [
+          "To be blind",
+          "To agree fully",
+          "To disagree",
+          "To be angry"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the correct article: '______ Eiffel Tower is in Paris'.",
+        "options": ["A", "An", "The", "No article"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Identify the type of noun: 'Team won the match'.",
+        "options": ["Common", "Proper", "Collective", "Abstract"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the meaning of 'to be on cloud nine'?",
+        "options": [
+          "To be sad",
+          "To be very happy",
+          "To be angry",
+          "To be confused"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Choose the word that best completes the sentence: 'The committee will ______ the proposal carefully.'",
+        "options": ["effect", "affect", "accept", "assess"],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "Identify the type of sentence: 'Close the door!'",
+        "options": [
+          "Declarative",
+          "Interrogative",
+          "Imperative",
+          "Exclamatory"
+        ],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Which of the following sentences is grammatically correct?",
+        "options": [
+          "He don't like apples.",
+          "He doesn't likes apples.",
+          "He doesn't like apples.",
+          "He not like apples."
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Choose the synonym for 'diligent'.",
+        "options": ["Lazy", "Careless", "Industrious", "Negligent"],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "What is the meaning of the phrase 'a piece of cake'?",
+        "options": [
+          "A delicious dessert",
+          "A difficult task",
+          "An easy task",
+          "A valuable gift"
+        ],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Identify the tense used in the sentence: 'She had finished her work before they arrived.'",
+        "options": [
+          "Past simple",
+          "Past continuous",
+          "Past perfect",
+          "Present perfect"
+        ],
+        "correctOption": 2,
+        "points": 6
       }
     ],
     "Biology": [
       {
-        "question": "What is the powerhouse of the cell?",
+        "question": "What is the function of the xylem in plants?",
         "options": [
-          "Nucleus",
-          "Ribosome",
-          "Mitochondria",
-          "Endoplasmic Reticulum"
+          "Transport of food",
+          "Transport of water",
+          "Storage of food",
+          "Production of food"
         ],
-        "correctOption": 2,
-        "points": 10
+        "correctOption": 1,
+        "points": 6
       },
       {
-        "question": "Which of the following is a function of the kidney?",
-        "options": ["Digestion", "Respiration", "Excretion", "Circulation"],
-        "correctOption": 2,
-        "points": 10
+        "question": "Which part of the human digestive system absorbs most nutrients?",
+        "options": [
+          "Stomach",
+          "Small intestine",
+          "Large intestine",
+          "Esophagus"
+        ],
+        "correctOption": 1,
+        "points": 7
       },
       {
-        "question": "What is the process by which plants make their food?",
+        "question": "What is the process by which plants make their own food?",
         "options": [
           "Respiration",
           "Photosynthesis",
           "Transpiration",
+          "Fermentation"
+        ],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a function of red blood cells?",
+        "options": [
+          "Blood clotting",
+          "Fighting infections",
+          "Oxygen transport",
+          "Nutrient absorption"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the basic unit of heredity?",
+        "options": ["Cell", "Tissue", "Gene", "Organ"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which organ filters waste products from the blood?",
+        "options": ["Liver", "Kidney", "Spleen", "Pancreas"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the function of the mitochondria in a cell?",
+        "options": [
+          "Protein synthesis",
+          "Energy production",
+          "Storage of genetic material",
+          "Cell division"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a viral disease?",
+        "options": ["Tuberculosis", "Malaria", "HIV/AIDS", "Cholera"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the process of cell division that produces gametes?",
+        "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a function of the skeletal system?",
+        "options": [
+          "Digestion",
+          "Respiration",
+          "Support and protection",
+          "Circulation"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the role of enzymes in biological reactions?",
+        "options": [
+          "Increase activation energy",
+          "Decrease activation energy",
+          "Stop reactions",
+          "Cause mutations"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which part of the brain controls voluntary actions?",
+        "options": [
+          "Cerebellum",
+          "Medulla oblongata",
+          "Cerebrum",
+          "Hypothalamus"
+        ],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the function of the stomata in plants?",
+        "options": [
+          "Water absorption",
+          "Gas exchange",
+          "Nutrient transport",
+          "Support"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a bacterial disease?",
+        "options": ["Influenza", "Measles", "Tuberculosis", "Chickenpox"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the process of transferring pollen from an anther to a stigma called?",
+        "options": [
+          "Fertilization",
+          "Pollination",
+          "Germination",
+          "Transpiration"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the endocrine system?",
+        "options": [
+          "Digestion",
+          "Hormone secretion",
+          "Respiration",
+          "Excretion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the role of decomposers in an ecosystem?",
+        "options": [
+          "Produce food",
+          "Consume plants",
+          "Break down organic matter",
+          "Pollinate flowers"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the lymphatic system?",
+        "options": [
+          "Digestion",
+          "Immune response",
+          "Respiration",
+          "Circulation"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the process of converting glucose to ATP called?",
+        "options": [
+          "Photosynthesis",
+          "Respiration",
+          "Fermentation",
           "Digestion"
         ],
         "correctOption": 1,
-        "points": 10
+        "points": 7
       },
       {
-        "question": "Which blood type is known as the universal donor?",
+        "question": "Which of the following is a function of the nervous system?",
+        "options": [
+          "Digestion",
+          "Coordination and control",
+          "Respiration",
+          "Excretion"
+        ],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "What is the function of the diaphragm in the respiratory system?",
+        "options": [
+          "Gas exchange",
+          "Air filtration",
+          "Muscle contraction for breathing",
+          "Sound production"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the circulatory system?",
+        "options": [
+          "Nutrient absorption",
+          "Gas transport",
+          "Waste elimination",
+          "All of the above"
+        ],
+        "correctOption": 3,
+        "points": 7
+      },
+      {
+        "question": "What is the process of water loss from plants through stomata called?",
+        "options": [
+          "Photosynthesis",
+          "Respiration",
+          "Transpiration",
+          "Guttation"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the immune system?",
+        "options": [
+          "Digestion",
+          "Defense against pathogens",
+          "Respiration",
+          "Excretion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the role of chlorophyll in photosynthesis?",
+        "options": [
+          "Water absorption",
+          "Carbon dioxide absorption",
+          "Light energy absorption",
+          "Oxygen production"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the muscular system?",
+        "options": ["Digestion", "Movement", "Respiration", "Excretion"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the process of breakdown of food into simpler substances called?",
+        "options": ["Absorption", "Digestion", "Assimilation", "Egestion"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the excretory system?",
+        "options": ["Digestion", "Waste removal", "Respiration", "Circulation"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the role of ribosomes in a cell?",
+        "options": [
+          "DNA replication",
+          "Protein synthesis",
+          "Lipid synthesis",
+          "Carbohydrate storage"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the reproductive system?",
+        "options": [
+          "Digestion",
+          "Production of gametes",
+          "Respiration",
+          "Excretion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the process of fusion of male and female gametes called?",
+        "options": ["Pollination", "Fertilization", "Germination", "Ovulation"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the skeletal muscles?",
+        "options": [
+          "Digestion",
+          "Voluntary movement",
+          "Respiration",
+          "Hormone secretion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the function of the cell wall in plant cells?",
+        "options": [
+          "Protein synthesis",
+          "Support and protection",
+          "Energy production",
+          "Genetic material storage"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the platelets in blood?",
+        "options": [
+          "Oxygen transport",
+          "Fighting infections",
+          "Blood clotting",
+          "Nutrient transport"
+        ],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the role of the nucleus in a cell?",
+        "options": [
+          "Protein synthesis",
+          "Control center",
+          "Energy production",
+          "Lipid synthesis"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the large intestine?",
+        "options": [
+          "Nutrient absorption",
+          "Water absorption",
+          "Protein digestion",
+          "Carbohydrate digestion"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the process of producing offspring from a single parent called?",
+        "options": [
+          "Sexual reproduction",
+          "Asexual reproduction",
+          "Fertilization",
+          "Pollination"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the sensory neurons?",
+        "options": [
+          "Muscle contraction",
+          "Signal transmission to the brain",
+          "Hormone secretion",
+          "Enzyme production"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the function of the vacuole in a plant cell?",
+        "options": [
+          "Protein synthesis",
+          "Storage of water and nutrients",
+          "Energy production",
+          "Genetic material storage"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the white blood cells?",
+        "options": [
+          "Oxygen transport",
+          "Blood clotting",
+          "Fighting infections",
+          "Nutrient transport"
+        ],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the process of breakdown of complex molecules into simpler ones called?",
+        "options": ["Anabolism", "Catabolism", "Metabolism", "Homeostasis"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the motor neurons?",
+        "options": [
+          "Signal transmission from the brain",
+          "Hormone secretion",
+          "Enzyme production",
+          "Sensory input"
+        ],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "What is the role of the Golgi apparatus in a cell?",
+        "options": [
+          "Protein synthesis",
+          "Packaging and transport of proteins",
+          "Energy production",
+          "Genetic material storage"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Which of the following is a function of the alveoli in the lungs?",
+        "options": [
+          "Air filtration",
+          "Gas exchange",
+          "Muscle contraction for breathing",
+          "Sound production"
+        ],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which of the following organisms belongs to the Kingdom Fungi?",
+        "options": ["Bacteria", "Yeast", "Algae", "Protozoa"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "What is the primary function of the root hair cells in plants?",
+        "options": [
+          "Photosynthesis",
+          "Anchorage",
+          "Water and mineral absorption",
+          "Food storage"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "In which part of a cell does aerobic respiration mainly occur?",
+        "options": ["Cytoplasm", "Nucleus", "Mitochondria", "Vacuole"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which of the following blood groups is considered the universal donor?",
         "options": ["A", "B", "AB", "O"],
         "correctOption": 3,
-        "points": 10
+        "points": 6
       },
       {
-        "question": "What is the largest organ in the human body?",
-        "options": ["Liver", "Heart", "Skin", "Brain"],
+        "question": "What type of joint is found at the knee?",
+        "options": [
+          "Ball and socket joint",
+          "Hinge joint",
+          "Gliding joint",
+          "Pivot joint"
+        ],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is an example of a reflex action?",
+        "options": [
+          "Reading a book",
+          "Riding a bicycle",
+          "Withdrawal of hand from a hot object",
+          "Playing a musical instrument"
+        ],
         "correctOption": 2,
-        "points": 10
+        "points": 6
       }
     ],
     "Physics": [
       {
         "question": "What is the SI unit of force?",
-        "options": ["Joule", "Newton", "Watt", "Pascal"],
-        "correctOption": 1,
-        "points": 10
-      },
-      {
-        "question": "What is the speed of light in a vacuum?",
-        "options": [
-          "300,000 km/s",
-          "150,000 km/s",
-          "450,000 km/s",
-          "600,000 km/s"
-        ],
-        "correctOption": 0,
-        "points": 10
-      },
-      {
-        "question": "Which law states that 'every action has an equal and opposite reaction'?",
-        "options": [
-          "Newton's First Law",
-          "Newton's Second Law",
-          "Newton's Third Law",
-          "Ohm's Law"
-        ],
+        "options": ["Joule", "Watt", "Newton", "Pascal"],
         "correctOption": 2,
-        "points": 10
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a scalar quantity?",
+        "options": ["Velocity", "Acceleration", "Distance", "Force"],
+        "correctOption": 2,
+        "points": 6
       },
       {
         "question": "What is the formula for calculating work done?",
         "options": [
-          "Force × Distance",
-          "Mass × Acceleration",
-          "Pressure × Volume",
-          "Voltage × Current"
+          "Force x Distance",
+          "Force / Distance",
+          "Distance / Force",
+          "Force + Distance"
         ],
         "correctOption": 0,
-        "points": 10
+        "points": 7
       },
       {
-        "question": "What is the unit of electric current?",
-        "options": ["Volt", "Ampere", "Ohm", "Watt"],
-        "correctOption": 1,
-        "points": 10
-      }
-    ],
-    "Chemistry": [
-      {
-        "question": "What is the chemical symbol for water?",
-        "options": ["H2O", "CO2", "NaCl", "O2"],
-        "correctOption": 0,
-        "points": 10
-      },
-      {
-        "question": "What is the atomic number of carbon?",
-        "options": ["6", "12", "14", "16"],
-        "correctOption": 0,
-        "points": 10
-      },
-      {
-        "question": "Which gas is most abundant in the Earth's atmosphere?",
-        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "question": "Which law states that 'for every action, there is an equal and opposite reaction'?",
+        "options": [
+          "Newton's first law",
+          "Newton's second law",
+          "Newton's third law",
+          "Law of conservation of energy"
+        ],
         "correctOption": 2,
-        "points": 10
+        "points": 6
       },
       {
-        "question": "What is the pH value of a neutral solution?",
-        "options": ["0", "7", "14", "10"],
+        "question": "What is the SI unit of power?",
+        "options": ["Joule", "Watt", "Newton", "Pascal"],
         "correctOption": 1,
-        "points": 10
+        "points": 5
       },
       {
-        "question": "What is the process of a liquid turning into a gas called?",
-        "options": ["Condensation", "Evaporation", "Sublimation", "Freezing"],
+        "question": "Which of the following is a vector quantity?",
+        "options": ["Speed", "Time", "Displacement", "Mass"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating kinetic energy?",
+        "options": ["1/2 mv^2", "mgh", "F x d", "P x t"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a type of electromagnetic wave?",
+        "options": ["Sound wave", "Water wave", "Light wave", "Seismic wave"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of pressure?",
+        "options": ["Joule", "Watt", "Newton", "Pascal"],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a derived unit?",
+        "options": ["Meter", "Kilogram", "Second", "Newton"],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating potential energy?",
+        "options": ["1/2 mv^2", "mgh", "F x d", "P x t"],
         "correctOption": 1,
-        "points": 10
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the pressure of a gas is inversely proportional to its volume'?",
+        "options": [
+          "Charles's law",
+          "Boyle's law",
+          "Gay-Lussac's law",
+          "Avogadro's law"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of frequency?",
+        "options": ["Hertz", "Watt", "Newton", "Pascal"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a fundamental unit?",
+        "options": ["Joule", "Watt", "Newton", "Kilogram"],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating momentum?",
+        "options": ["F x d", "1/2 mv^2", "m x v", "P x t"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which of the following is a type of mechanical wave?",
+        "options": ["Light wave", "Radio wave", "Sound wave", "X-ray"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of electric current?",
+        "options": ["Volt", "Ampere", "Ohm", "Farad"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a property of a conductor?",
+        "options": [
+          "High resistance",
+          "Low resistance",
+          "Insulating properties",
+          "Semiconducting properties"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating voltage?",
+        "options": ["I x R", "P / I", "Q / C", "All of the above"],
+        "correctOption": 3,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the current flowing through a conductor is directly proportional to the voltage across it'?",
+        "options": [
+          "Faraday's law",
+          "Lenz's law",
+          "Ohm's law",
+          "Kirchhoff's law"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of resistance?",
+        "options": ["Volt", "Ampere", "Ohm", "Farad"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a property of an insulator?",
+        "options": [
+          "High conductivity",
+          "Low conductivity",
+          "Metallic properties",
+          "Superconducting properties"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating electric power?",
+        "options": ["I x R", "V x I", "Q / C", "All of the above"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the total current entering a junction is equal to the total current leaving it'?",
+        "options": [
+          "Faraday's law",
+          "Lenz's law",
+          "Ohm's law",
+          "Kirchhoff's current law"
+        ],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of capacitance?",
+        "options": ["Volt", "Ampere", "Ohm", "Farad"],
+        "correctOption": 3,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a property of a semiconductor?",
+        "options": [
+          "High conductivity",
+          "Low conductivity",
+          "Conductivity between conductors and insulators",
+          "Superconducting properties"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating electric charge?",
+        "options": ["I x t", "V x I", "Q / C", "All of the above"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'an induced electromotive force (EMF) is in a direction that opposes the change that produced it'?",
+        "options": [
+          "Faraday's law",
+          "Lenz's law",
+          "Ohm's law",
+          "Kirchhoff's voltage law"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of magnetic flux density?",
+        "options": ["Tesla", "Weber", "Henry", "Coulomb"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a type of nuclear radiation?",
+        "options": [
+          "Sound waves",
+          "Light waves",
+          "Alpha particles",
+          "Water waves"
+        ],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the period of a wave?",
+        "options": ["1 / f", "λ / v", "v x f", "λ x f"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the force between two point charges is directly proportional to the product of their magnitudes and inversely proportional to the square of the distance between them'?",
+        "options": [
+          "Faraday's law",
+          "Lenz's law",
+          "Ohm's law",
+          "Coulomb's law"
+        ],
+        "correctOption": 3,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of inductance?",
+        "options": ["Tesla", "Weber", "Henry", "Coulomb"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a type of radioactive decay?",
+        "options": ["Reflection", "Refraction", "Beta decay", "Interference"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the wavelength of a wave?",
+        "options": ["1 / f", "λ / v", "v / f", "λ x f"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the total energy of an isolated system remains constant'?",
+        "options": [
+          "Newton's laws",
+          "Law of conservation of energy",
+          "Kepler's laws",
+          "Thermodynamic laws"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of luminous intensity?",
+        "options": ["Candela", "Lumen", "Lux", "Watt"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a type of lens?",
+        "options": ["Mirror", "Prism", "Convex lens", "Diffraction grating"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the speed of a wave?",
+        "options": ["1 / f", "λ / v", "v / f", "λ x f"],
+        "correctOption": 3,
+        "points": 7
+      },
+      {
+        "question": "Which principle states that 'it is impossible to know both the position and momentum of a particle with absolute certainty'?",
+        "options": [
+          "Pauli exclusion principle",
+          "Heisenberg uncertainty principle",
+          "Archimedes' principle",
+          "Bernoulli's principle"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of temperature?",
+        "options": ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a type of mirror?",
+        "options": ["Lens", "Prism", "Concave mirror", "Diffraction grating"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the refractive index?",
+        "options": ["sin i / sin r", "sin r / sin i", "i / r", "r / i"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the rate of heat transfer is proportional to the temperature difference between two bodies'?",
+        "options": [
+          "Newton's law of cooling",
+          "Fourier's law",
+          "Stefan-Boltzmann law",
+          "Zeroth law of thermodynamics"
+        ],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of heat capacity?",
+        "options": ["J/K", "J/°C", "W/K", "W/°C"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Which of the following is a type of heat transfer?",
+        "options": ["Reflection", "Refraction", "Conduction", "Interference"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the formula for calculating the efficiency of a heat engine?",
+        "options": [
+          "Work output / Heat input",
+          "Heat input / Work output",
+          "Work output x Heat input",
+          "Heat input - Work output"
+        ],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Which law states that 'the entropy of an isolated system always increases'?",
+        "options": [
+          "First law of thermodynamics",
+          "Second law of thermodynamics",
+          "Third law of thermodynamics",
+          "Zeroth law of thermodynamics"
+        ],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the SI unit of entropy?",
+        "options": ["J/K", "J/°C", "W/K", "W/°C"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "What is the phenomenon of bending of light as it passes from one medium to another called?",
+        "options": ["Reflection", "Refraction", "Diffraction", "Interference"],
+        "correctOption": 1,
+        "points": 6
       }
     ]
   }
