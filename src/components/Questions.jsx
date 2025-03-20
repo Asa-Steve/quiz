@@ -45,15 +45,18 @@ const Questions = ({
   currSubject,
   isSubjectCompleted,
   totalTime,
+  reqNumOfQues,
 }) => {
   const isAnswered = answer !== null;
   const numOfQuest = questions.length;
   const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
 
+  // Fetching Questions
   useEffect(() => {
     async function fetchQuestions() {
       try {
-        const res = await fetch("https://quiz-resource.onrender.com/questions");
+        // const res = await fetch("https://quiz-resource.onrender.com/questions");
+        const res = await fetch("http://localhost:5000/questions");
         if (!res.ok) throw new Error("Couldnt fetch Questions");
         const data = await res.json();
 
@@ -73,7 +76,19 @@ const Questions = ({
           randomizedQuestions[subject] = shuffledQuestions;
         });
 
-        dispatch({ type: "active", payload: randomizedQuestions });
+        const requiredQues = Object.keys(randomizedQuestions).reduce(
+          (acc, currSubject) => {
+            return {
+              ...acc,
+              [currSubject]: randomizedQuestions[currSubject].slice(
+                0,
+                reqNumOfQues
+              ),
+            };
+          },
+          {}
+        );
+        dispatch({ type: "active", payload: requiredQues });
       } catch (error) {
         if (error?.name !== "AbortError") {
           console.error("Fetch error: ", error);

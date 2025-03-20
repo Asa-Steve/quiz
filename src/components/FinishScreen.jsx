@@ -20,9 +20,20 @@ const FinishScreen = ({
     totalQuestions += subjDetails.totalQuestions;
   }
 
+  // console.log(subjectProgress);
+
   const percentage = Math.floor((totalPoints / totalMaxPoints) * 100);
   const percentageQuestion = Math.floor((totalAnswered / totalQuestions) * 100);
   const totalAttempt = totalAnswered;
+
+  // console.log(
+  //   "totalPoints:",
+  //   totalPoints,
+  //   "totalMaxPoints :",
+  //   totalMaxPoints,
+  //   "totalAnswered: ",
+  //   totalAnswered
+  // );
 
   return (
     <>

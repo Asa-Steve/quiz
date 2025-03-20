@@ -20,6 +20,12 @@ const Footer = ({
     return () => clearInterval(intervalId);
   }, [dispatch, timeAllowed]);
 
+  function HandleFinish() {
+    const confirm = window.confirm("Are you sure you want to finish exam?");
+    if (!confirm) return;
+    dispatch({ type: "finish" });
+  }
+
   return (
     <footer>
       <TimerProgress
@@ -31,12 +37,17 @@ const Footer = ({
         {min} : {sec}
       </span> */}
       {isAnswered && !isSubjectCompleted && (
-        <button
-          className="btn btn-ui next"
-          onClick={() => dispatch({ type: "nextQuestion", payload: answer })}
-        >
-          Next
-        </button>
+        <div style={{ marginLeft: "auto", display: "flex", gap: "20px" }}>
+          <button className="btn btn-ui next btn-finish" onClick={HandleFinish}>
+            Finish
+          </button>
+          <button
+            className="btn btn-ui next"
+            onClick={() => dispatch({ type: "nextQuestion", payload: answer })}
+          >
+            Next
+          </button>
+        </div>
       )}
       {isSubjectCompleted && (
         <button

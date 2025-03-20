@@ -163,7 +163,9 @@ progress {
   border-radius: 100px;
   transition: 0.3s;
 }
-
+.btn-finish {
+  background-color: var(--color-theme);
+}
 .btn:not([disabled]):hover {
   background-color: var(--color-darkest);
 }
@@ -320,6 +322,24 @@ progress {
   padding: 0.5rem 2rem;
   margin-top: 0;
 }
+.setup .ques_no {
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+.setup .ques_no input:focus {
+  outline: none;
+  /* appearance: textfield; */
+}
+.setup .ques_no input:focus::-webkit-inner-spin-button,
+.setup .ques_no input:focus::-webkit-outer-spin-button,
+.setup .ques_no input:hover::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 /* Question */
 .question {
@@ -475,6 +495,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .question .stat,
+  .question .progress {
+    width: 80%;
+  }
 }
 
 @media (max-width: 783px) {
@@ -532,6 +556,10 @@ footer {
     width: fit-content;
     padding: 0;
   }
+  .options .btn.btn-option {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 @media (max-width: 530px) {
   .app-header {
@@ -567,10 +595,8 @@ footer {
     column-gap: 5px;
     row-gap: 10px;
     width: 100%;
-  }
-  .btn-option {
-    width: 48%;
-    font-size: 16px;
+    padding: 1rem;
+    margin-bottom: 6rem;
   }
 }
 

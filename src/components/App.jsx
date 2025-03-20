@@ -30,6 +30,7 @@ const App = () => {
       isSubjectCompleted,
       subjectProgress,
       totalTime,
+      reqNumOfQues,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -40,7 +41,10 @@ const App = () => {
       <Main>
         {status === "intro" && <HomeScreen dispatch={dispatch} />}
         {status === "setup" && (
-          <Setup dispatch={dispatch} selectedSubjects={selectedSubjects} />
+          <Setup
+            dispatch={dispatch}
+            selectedSubjects={selectedSubjects}
+          />
         )}
         {(status === "loading" || status === "ready") && (
           <Questions
@@ -55,6 +59,7 @@ const App = () => {
             currSubject={currSubject}
             isSubjectCompleted={isSubjectCompleted}
             totalTime={totalTime}
+            reqNumOfQues={reqNumOfQues}
           />
         )}
 

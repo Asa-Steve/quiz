@@ -16,6 +16,7 @@ export const initialState = {
   completed: [],
   maxPoints: null,
   totalTime: null,
+  reqNumOfQues: 50,
 };
 
 export function reducer(state, action) {
@@ -39,8 +40,7 @@ export function reducer(state, action) {
 
     // A brief Loading state between fetching data( questions ) and storing it
     case "start":
-      return { ...state, status: "loading" };
-
+      return { ...state, status: "loading", reqNumOfQues: +action.payload };
     // Questions Fetched and ready
     case "active": {
       const time =
@@ -183,44 +183,69 @@ export function reducer(state, action) {
       return { ...state, timeAllowed: state.timeAllowed - 1 }; // reduce the time by 1 every second
 
     // this handles the final submit state. in a case where user time ends before completing a subject
+    // case "finish": {
+    //   // Ensuring all selected subjects are stored in subjectProgress
+    //   // you can spend some time here to try and understand what is going on here in the reduce fn ( a bit tricky, so spend some time here )
+    //   const updatedSubjectProgress = state.selectedSubjects.reduce(
+    //     (acc, subject) => {
+    //       acc[subject] = state.subjectProgress[subject] || {
+    //         index: 0,
+    //         points: 0,
+    //         totalAnswered: 0,
+    //         isSubjectCompleted: false,
+    //         totalQuestions: state.allQuestions[subject]?.length || 0,
+    //         maxPoints:
+    //           state.allQuestions[subject]?.reduce(
+    //             (sum, q) => sum + q.points,
+    //             0
+    //           ) || 0,
+    //       };
+    //       return acc;
+    //     },
+    //     {
+    //       ...state.subjectProgress,
+    //       [state.selectedSubjects[state.currSubject]]: {
+    //         index: state.index,
+    //         points: state.points,
+    //         totalAnswered: state.totalAnswered,
+    //         isSubjectCompleted: true,
+    //         totalQuestions: state.totalQuestions,
+    //         maxPoints: state.maxPoints,
+    //       },
+    //     }
+    //   );
+
+    //   return {
+    //     ...state,
+    //     status: "finish",
+    //     subjectProgress: updatedSubjectProgress,
+    //   };
+    // }
     case "finish": {
-      // Ensuring all selected subjects are stored in subjectProgress
-      // you can spend some time here to try and understand what is going on here in the reduce fn ( a bit tricky, so spend some time here )
-      const updatedSubjectProgress = state.selectedSubjects.reduce(
-        (acc, subject) => {
-          acc[subject] = state.subjectProgress[subject] || {
-            index: 0,
-            points: 0,
-            totalAnswered: 0,
-            isSubjectCompleted: false,
-            totalQuestions: state.allQuestions[subject]?.length || 0,
-            maxPoints:
-              state.allQuestions[subject]?.reduce(
-                (sum, q) => sum + q.points,
-                0
-              ) || 0,
-          };
-          return acc;
+      // Identify the currently selected subject
+      const subjectKey = state.selectedSubjects[state.currSubject];
+
+      // Update only the current subject's progress
+      const updatedSubjectProgress = {
+        ...state.subjectProgress, // Preserve existing subjects
+        [subjectKey]: {
+          ...state.subjectProgress[subjectKey], // Preserve previous progress
+          index: state.index, // ✅ Store last answered index
+          points: state.points, // ✅ Store subject-specific points
+          totalAnswered: state.totalAnswered, // ✅ Store subject-specific total answered
+          isSubjectCompleted: true, // ✅ Mark subject as completed
+          totalQuestions: state.totalQuestions, // Keep total question count
+          maxPoints: state.maxPoints, // Preserve max points for the subject
         },
-        {
-          ...state.subjectProgress,
-          [state.selectedSubjects[state.currSubject]]: {
-            index: state.index,
-            points: state.points,
-            totalAnswered: state.totalAnswered,
-            isSubjectCompleted: true,
-            totalQuestions: state.totalQuestions,
-            maxPoints: state.maxPoints,
-          },
-        }
-      );
+      };
 
       return {
         ...state,
         status: "finish",
-        subjectProgress: updatedSubjectProgress,
+        subjectProgress: updatedSubjectProgress, // ✅ Assign updated subject progress
       };
     }
+
     // Handling the retake state. to enable user try again
     case "retake":
       return { ...initialState };

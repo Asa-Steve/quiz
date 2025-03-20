@@ -6,6 +6,7 @@ const Option = ({
   idx,
   questions,
   index,
+  
 }) => {
   return (
     <button

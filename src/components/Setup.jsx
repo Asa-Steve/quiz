@@ -1,6 +1,9 @@
+import { useState } from "react";
+
 const Setup = ({ dispatch, selectedSubjects }) => {
   const subj = ["English", "Mathematics", "Biology", "Physics", "Chemistry"];
-  const numSUbject = selectedSubjects.length;
+  const numSubject = selectedSubjects.length;
+  const [num, setNum] = useState("");
   return (
     <div className="setup">
       <h3>Select at most four ( 4 ) subjects</h3>
@@ -20,11 +23,22 @@ const Setup = ({ dispatch, selectedSubjects }) => {
           </div>
         ))}
       </div>
+      <div className="ques_no">
+        <p>Enter num of questions</p>
+        <input
+          type="number"
+          value={num || ""}
+          max={50}
+          min={1}
+          onChange={(e) => setNum(+e.target.value)}
+        />
+      </div>
+
       <div className="proceed">
-        {numSUbject >= 1 && numSUbject <= 4 && (
+        {numSubject >= 1 && numSubject <= 4 && num > 0 && num < 51 && (
           <button
             className="btn btn-ui"
-            onClick={() => dispatch({ type: "start" })}
+            onClick={() => dispatch({ type: "start", payload: num })}
           >
             Proceed
           </button>
