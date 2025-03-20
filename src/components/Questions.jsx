@@ -53,7 +53,7 @@ const Questions = ({
   useEffect(() => {
     async function fetchQuestions() {
       try {
-        // const res = await fetch("https://quiz-resource.onrender.com/questions");
+        const res = await fetch("https://quiz-resource.onrender.com/questions");
         if (!res.ok) throw new Error("Couldnt fetch Questions");
         const data = await res.json();
         console.log(data);
