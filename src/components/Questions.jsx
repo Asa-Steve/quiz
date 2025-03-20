@@ -56,7 +56,6 @@ const Questions = ({
         const res = await fetch("https://quiz-resource.onrender.com/questions");
         if (!res.ok) throw new Error("Couldnt fetch Questions");
         const data = await res.json();
-        console.log(data);
 
         if (Object.keys(data).length === 0)
           throw new Error("No Questions Found!");

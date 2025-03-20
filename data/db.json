@@ -1953,6 +1953,12 @@
         "options": ["1", "2", "3", "4"],
         "correctOption": 2,
         "points": 7
+      },
+      {
+        "question": "If a triangle has sides of length 3, 4, and 5, what is its area?",
+        "options": ["6", "10", "12", "15"],
+        "correctOption": 0,
+        "points": 6
       }
     ]
   }
