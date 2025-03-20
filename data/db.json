@@ -1653,6 +1653,307 @@
         "correctOption": 1,
         "points": 6
       }
+    ],
+    "Mathematics": [
+      {
+        "question": "Solve for x: 3x + 5 = 14",
+        "options": ["2", "3", "4", "5"],
+        "correctOption": 1,
+        "points": 5
+      },
+      {
+        "question": "What is the area of a circle with radius 7cm?",
+        "options": ["49π cm²", "14π cm²", "28π cm²", "7π cm²"],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "Find the median of the following set: 2, 5, 8, 11, 15",
+        "options": ["5", "8", "11", "15"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Simplify: (x^2 * x^3) / x^4",
+        "options": ["x", "x^2", "x^3", "x^4"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "What is the value of sin(30°)?",
+        "options": ["1", "1/2", "√3/2", "0"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Solve the quadratic equation: x^2 - 5x + 6 = 0",
+        "options": ["x=1, x=6", "x=2, x=3", "x=4, x=1", "x=5, x=0"],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "What is the derivative of 4x^3?",
+        "options": ["4x^2", "12x^2", "12x^3", "4x^4"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Find the sum of the first 10 terms of the arithmetic progression: 2, 4, 6, 8, ...",
+        "options": ["90", "100", "110", "120"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "If log₂(x) = 3, what is the value of x?",
+        "options": ["6", "8", "9", "10"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the probability of getting a head when tossing a fair coin?",
+        "options": ["1/4", "1/3", "1/2", "1"],
+        "correctOption": 2,
+        "points": 5
+      },
+      {
+        "question": "Find the gradient of the line 2y = 4x + 6",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "What is the circumference of a circle with diameter 10cm?",
+        "options": ["5π cm", "10π cm", "20π cm", "25π cm"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Find the mode of the following set: 3, 5, 3, 7, 3, 9",
+        "options": ["3", "5", "7", "9"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Simplify: (a^6 / a^2)^2",
+        "options": ["a^4", "a^6", "a^8", "a^12"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the value of cos(60°)?",
+        "options": ["1", "1/2", "√3/2", "0"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Solve the inequality: 2x + 3 > 7",
+        "options": ["x > 1", "x > 2", "x > 3", "x > 4"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the integral of 2x?",
+        "options": ["x", "x^2", "2x^2", "2"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "Find the 5th term of the geometric progression: 1, 2, 4, 8, ...",
+        "options": ["16", "24", "32", "64"],
+        "correctOption": 0,
+        "points": 8
+      },
+      {
+        "question": "If log₃(9) = x, what is the value of x?",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the probability of rolling a 4 on a fair six-sided die?",
+        "options": ["1/6", "1/4", "1/3", "1/2"],
+        "correctOption": 0,
+        "points": 5
+      },
+      {
+        "question": "Find the distance between points (1, 2) and (4, 6)",
+        "options": ["3", "4", "5", "6"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the volume of a cube with side length 5cm?",
+        "options": ["25 cm³", "75 cm³", "125 cm³", "150 cm³"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Find the range of the following set: 10, 15, 20, 25, 30",
+        "options": ["10", "15", "20", "25"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Simplify: (2a^3b^2)^3",
+        "options": ["6a^6b^5", "8a^9b^6", "8a^6b^5", "6a^9b^6"],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "What is the value of tan(45°)?",
+        "options": ["0", "1", "√3", "1/2"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Solve the system of equations: x + y = 5, x - y = 1",
+        "options": ["x=2, y=3", "x=3, y=2", "x=4, y=1", "x=1, y=4"],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "What is the derivative of sin(x)?",
+        "options": ["cos(x)", "-cos(x)", "sin(x)", "-sin(x)"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Find the sum of the infinite geometric progression: 1, 1/2, 1/4, 1/8, ...",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "If log₄(16) = x, what is the value of x?",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the probability of drawing a red card from a standard deck of 52 cards?",
+        "options": ["1/4", "1/3", "1/2", "3/4"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Find the equation of a line with slope 2 and y-intercept 3",
+        "options": ["y = 2x + 3", "y = 3x + 2", "y = 2x - 3", "y = 3x - 2"],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "What is the surface area of a sphere with radius 3cm?",
+        "options": ["9π cm²", "18π cm²", "36π cm²", "72π cm²"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "Find the mean of the following set: 4, 6, 8, 10, 12",
+        "options": ["6", "8", "10", "12"],
+        "correctOption": 2,
+        "points": 6
+      },
+      {
+        "question": "Simplify: (x^2y^3)^4",
+        "options": ["x^6y^7", "x^8y^12", "x^6y^12", "x^8y^7"],
+        "correctOption": 1,
+        "points": 7
+      },
+      {
+        "question": "What is the value of cot(90°)?",
+        "options": ["0", "1", "undefined", "-1"],
+        "correctOption": 0,
+        "points": 6
+      },
+      {
+        "question": "Solve for x: |2x - 1| = 5",
+        "options": [
+          "x = 2, x = 3",
+          "x = 3, x = -2",
+          "x = 4, x = -3",
+          "x = 1, x = -4"
+        ],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "What is the integral of cos(x)?",
+        "options": ["sin(x)", "-sin(x)", "cos(x)", "-cos(x)"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Find the sum of the first 6 terms of the geometric progression: 3, 6, 12, 24, ...",
+        "options": ["189", "190", "191", "192"],
+        "correctOption": 0,
+        "points": 8
+      },
+      {
+        "question": "If log₅(125) = x, what is the value of x?",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 2,
+        "points": 7
+      },
+      {
+        "question": "What is the probability of getting a sum of 7 when rolling two fair six-sided dice?",
+        "options": ["1/6", "1/12", "1/9", "1/18"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Find the midpoint of the line segment joining points (2, 4) and (6, 8)",
+        "options": ["(3, 5)", "(4, 6)", "(5, 7)", "(6, 8)"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "What is the volume of a cylinder with radius 4cm and height 10cm?",
+        "options": ["40π cm³", "80π cm³", "120π cm³", "160π cm³"],
+        "correctOption": 3,
+        "points": 7
+      },
+      {
+        "question": "Find the standard deviation of the following set: 1, 3, 5, 7, 9",
+        "options": ["2", "√8", "3", "√10"],
+        "correctOption": 2,
+        "points": 8
+      },
+      {
+        "question": "Simplify: (3a^2b^4)^2 / (ab^2)",
+        "options": ["9ab^6", "9a^3b^6", "9a^3b^4", "9a^2b^4"],
+        "correctOption": 1,
+        "points": 8
+      },
+      {
+        "question": "What is the value of sec(0°)?",
+        "options": ["0", "1", "undefined", "-1"],
+        "correctOption": 1,
+        "points": 6
+      },
+      {
+        "question": "Solve the logarithmic equation: log₂(x) + log₂(x - 2) = 3",
+        "options": ["x = 1", "x = 2", "x = 4", "x = 8"],
+        "correctOption": 3,
+        "points": 9
+      },
+      {
+        "question": "What is the derivative of e^x?",
+        "options": ["e^x", "xe^(x-1)", "ln(x)", "1/x"],
+        "correctOption": 0,
+        "points": 7
+      },
+      {
+        "question": "Find the sum to infinity of the geometric progression: 9, 3, 1, 1/3, ...",
+        "options": ["13.5", "14", "14.5", "15"],
+        "correctOption": 0,
+        "points": 8
+      },
+      {
+        "question": "If log₆(216) = x, what is the value of x?",
+        "options": ["1", "2", "3", "4"],
+        "correctOption": 2,
+        "points": 7
+      }
     ]
   }
 }
