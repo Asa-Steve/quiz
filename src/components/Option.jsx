@@ -1,13 +1,9 @@
-const Option = ({
-  dispatch,
-  option,
-  isAnswered,
-  answer,
-  idx,
-  questions,
-  index,
-  
-}) => {
+import { useQuiz } from "../Context/QuizProvider";
+
+const Option = ({ option, idx }) => {
+  const { dispatch, questions, index, answer } = useQuiz();
+  const isAnswered = answer !== null;
+
   return (
     <button
       key={option}

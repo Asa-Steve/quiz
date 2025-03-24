@@ -1,13 +1,9 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
+import { useQuiz } from "../Context/QuizProvider";
 
-const FinishScreen = ({
-  dispatch,
-  // points,
-  // questions,
-  // totalAnswered,
-  subjectProgress,
-}) => {
+const FinishScreen = () => {
+  const { dispatch, subjectProgress } = useQuiz();
   let totalPoints = 0;
   let totalAnswered = 0;
   let totalQuestions = 0;

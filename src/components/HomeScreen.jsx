@@ -1,4 +1,7 @@
-const HomeScreen = ({ dispatch }) => {
+import { useQuiz } from "../Context/QuizProvider";
+
+const HomeScreen = () => {
+  const { dispatch } = useQuiz();
   return (
     <div className="start">
       <h2>Welcome to the Quiz App</h2>

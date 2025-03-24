@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react";
+import { useEffect } from "react";
 import Header from "./Header";
 import HomeScreen from "./HomeScreen";
 import Main from "./Main";
@@ -8,70 +8,24 @@ import FinishScreen from "./FinishScreen";
 
 // Utils
 import { initGA } from "../utils/gtag";
-import { initialState, reducer } from "../utils/reducerFn";
 import Error from "./Error";
+import { useQuiz } from "../Context/QuizProvider";
 
 const App = () => {
   useEffect(() => {
     initGA(); // Initialize Google Analytics when the app loads
   }, []);
 
-  const [
-    {
-      questions,
-      status,
-      selectedSubjects,
-      index,
-      answer,
-      points,
-      timeAllowed,
-      totalAnswered,
-      currSubject,
-      isSubjectCompleted,
-      subjectProgress,
-      totalTime,
-      reqNumOfQues,
-    },
-    dispatch,
-  ] = useReducer(reducer, initialState);
-
+  const { status } = useQuiz();
   return (
     <div className="app">
       <Header />
       <Main>
-        {status === "intro" && <HomeScreen dispatch={dispatch} />}
-        {status === "setup" && (
-          <Setup
-            dispatch={dispatch}
-            selectedSubjects={selectedSubjects}
-          />
-        )}
-        {(status === "loading" || status === "ready") && (
-          <Questions
-            dispatch={dispatch}
-            status={status}
-            questions={questions}
-            index={index}
-            answer={answer}
-            points={points}
-            timeAllowed={timeAllowed}
-            selectedSubjects={selectedSubjects}
-            currSubject={currSubject}
-            isSubjectCompleted={isSubjectCompleted}
-            totalTime={totalTime}
-            reqNumOfQues={reqNumOfQues}
-          />
-        )}
+        {status === "intro" && <HomeScreen />}
+        {status === "setup" && <Setup />}
+        {(status === "loading" || status === "ready") && <Questions />}
 
-        {status === "finish" && (
-          <FinishScreen
-            points={points}
-            questions={questions}
-            totalAnswered={totalAnswered}
-            dispatch={dispatch}
-            subjectProgress={subjectProgress}
-          />
-        )}
+        {status === "finish" && <FinishScreen />}
 
         {status === "error" && <Error />}
       </Main>

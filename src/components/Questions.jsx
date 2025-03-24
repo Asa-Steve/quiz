@@ -4,6 +4,7 @@ import Option from "./Option";
 import Footer from "./Footer";
 import Error from "./Error";
 import { trackEvent, trackTiming } from "../utils/gtag";
+import { useQuiz } from "../Context/QuizProvider";
 
 // Function to shuffle an array
 const shuffleArray = (array) => {
@@ -33,21 +34,20 @@ const shuffleOptions = (question) => {
   };
 };
 
-const Questions = ({
-  dispatch,
-  status,
-  questions,
-  index,
-  answer,
-  points,
-  timeAllowed,
-  selectedSubjects,
-  currSubject,
-  isSubjectCompleted,
-  totalTime,
-  reqNumOfQues,
-}) => {
-  const isAnswered = answer !== null;
+const Questions = () => {
+  const {
+    questions,
+    answer,
+    reqNumOfQues,
+    dispatch,
+    isSubjectCompleted,
+    selectedSubjects,
+    index,
+    currSubject,
+    points,
+    status,
+  } = useQuiz();
+
   const numOfQuest = questions.length;
   const totalPoints = questions.reduce((acc, curr) => acc + curr.points, 0);
 
@@ -55,7 +55,8 @@ const Questions = ({
   useEffect(() => {
     async function fetchQuestions() {
       try {
-        const res = await fetch("https://quiz-resource.onrender.com/questions");
+        // const res = await fetch("https://quiz-resource.onrender.com/questions");
+        const res = await fetch("http://localhost:5000/questions");
         if (!res.ok) throw new Error("Couldnt fetch Questions");
         const data = await res.json();
 
@@ -97,7 +98,7 @@ const Questions = ({
     }
 
     fetchQuestions();
-  }, [dispatch]);
+  }, [dispatch, reqNumOfQues]);
 
   // For Google Analytics to work
   useEffect(() => {
@@ -158,29 +159,13 @@ const Questions = ({
             <h4>{questions.at(index).question}</h4>
             <div className="options">
               {questions.at(index).options.map((option, idx) => (
-                <Option
-                  dispatch={dispatch}
-                  option={option}
-                  isAnswered={isAnswered}
-                  answer={answer}
-                  idx={idx}
-                  questions={questions}
-                  index={index}
-                  key={option}
-                />
+                <Option option={option} idx={idx} key={option} />
               ))}
             </div>
           </>
         )}
 
-        <Footer
-          dispatch={dispatch}
-          isAnswered={isAnswered}
-          answer={answer}
-          timeAllowed={timeAllowed}
-          isSubjectCompleted={isSubjectCompleted}
-          totalTime={totalTime}
-        />
+        <Footer />
       </div>
     </>
   );

@@ -1,14 +1,17 @@
 import { useEffect } from "react";
 import TimerProgress from "./ProgressBar";
+import { useQuiz } from "../Context/QuizProvider";
 
-const Footer = ({
-  dispatch,
-  isAnswered,
-  answer,
-  timeAllowed,
-  isSubjectCompleted,
-  totalTime,
-}) => {
+const Footer = () => {
+  const {
+    dispatch,
+    answer,
+    timeAllowed,
+    isSubjectCompleted,
+    totalTime,
+  } = useQuiz();
+  
+  const isAnswered = answer !== null;
   const min = Math.floor(timeAllowed / 60); //timeAllowed is in sec (divided by 60 to get time in ---> minutes)
   const sec = timeAllowed % 60; //trying to get the remaining fraction of time left after getting the minutes above
   useEffect(() => {

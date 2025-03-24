@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { useQuiz } from "../Context/QuizProvider";
 
-const Setup = ({ dispatch, selectedSubjects }) => {
+const Setup = () => {
+  const { dispatch, selectedSubjects } = useQuiz();
+
   const subj = ["English", "Mathematics", "Biology", "Physics", "Chemistry"];
   const numSubject = selectedSubjects.length;
   const [num, setNum] = useState("");
+
   return (
     <div className="setup">
       <h3>Select at most four ( 4 ) subjects</h3>
